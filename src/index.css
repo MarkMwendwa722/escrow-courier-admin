@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+  body {
+    @apply text-gray-900 dark:text-gray-100 font-sans;
+    background-color: #F5F5F5;
+    color: #111827;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  .dark body {
+    background-color: #121212;
+    color: #f3f4f6;
+  }
+}
+
+@layer components {
+  /* Custom components for Escrow Courier */
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply rounded-lg shadow-sm border border-gray-200 p-6;
+    background-color: #ffffff;
+  }
+  
+  .dark .card {
+    background-color: #1e1e1e;
+    border-color: #2a2a2a;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900;
+    background-color: #ffffff;
+  }
+  
+  .dark .input {
+    background-color: #1e1e1e;
+    border-color: #2a2a2a;
+    color: #f3f4f6;
+  }
+  
+  .sidebar-link {
+    @apply flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-800 hover:text-primary-700 dark:hover:text-primary-400 rounded-lg transition-colors duration-200;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-primary-100 dark:bg-gray-800 text-primary-700 dark:text-primary-400;
+  }
+  
+  .status-badge {
+    @apply px-2 py-1 text-xs font-medium rounded-full;
+  }
+  
+  .status-badge.pending {
+    @apply bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200;
+  }
+  
+  .status-badge.in-transit {
+    @apply bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200;
+  }
+  
+  .status-badge.delivered {
+    @apply bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200;
+  }
+  
+  .status-failed {
+    @apply bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900;
+    background-color: #ffffff;
+  }
+  
+  .dark .input-field {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+    color: #f3f4f6;
+  }
+}

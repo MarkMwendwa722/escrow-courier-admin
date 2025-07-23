@@ -1,0 +1,17 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ultra-minimal truck for 16x16 -->
+  <circle cx="8" cy="8" r="8" fill="#84cc16"/>
+  <!-- Simplified truck - even more minimal -->
+  <g transform="translate(3, 5)">
+    <!-- Main body -->
+    <rect x="0" y="0" width="7" height="3" rx="0.5" fill="white"/>
+    <!-- Cabin -->
+    <rect x="7" y="0.5" width="3" height="2" rx="0.5" fill="white"/>
+    <!-- Wheels -->
+    <circle cx="2" cy="4.5" r="1" fill="white"/>
+    <circle cx="8" cy="4.5" r="1" fill="white"/>
+    <!-- Wheel centers -->
+    <circle cx="2" cy="4.5" r="0.4" fill="#84cc16"/>
+    <circle cx="8" cy="4.5" r="0.4" fill="#84cc16"/>
+  </g>
+</svg>
